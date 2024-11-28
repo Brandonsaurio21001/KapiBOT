@@ -92,7 +92,7 @@ faq_respuestas = {
         "text": "Hola {username}, en este caso debes hacer solicitud al correo expedientedigital@itcr.ac.cr. Adjunta la cédula vigente por ambos lados."
     },
     "1b": {
-        "text": "Hola {username}, lo que debes hacer es crear una contraseña temporal: [Video explicativo](https://www.youtube.com/watch?v=HHWyzOelcpE )"
+        "text": "Hola {username}, lo que debes hacer es crear una contraseña temporal: [Video explicativo](https://www.youtube.com/watch?v=7txicJVjfMM )"
     },
     "1c": {
         "text": "Hola {username}, en este caso debes ingresar a Mi Cuenta TEC: [Consulte el siguiente link](https://aplics.tec.ac.cr/MiCuentaTEC/)"
