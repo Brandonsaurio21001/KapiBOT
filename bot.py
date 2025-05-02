@@ -198,8 +198,8 @@ async def start(update: Update, context: CallbackContext):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-        f"Hola {user_name}, bienvenido al apartado de preguntas frecuentes del área de expedientes estudiantiles. "
-        "Por favor, selecciona una opción del menú:",
+        f"Hola {user_name}, KapiBOT te da la bienvenida. Selecciona la opción que mejor se adapte a tus necesidades para obtener asistencia personalizada. ¿En qué puedo ayudarte hoy? "
+        "menú:",
         reply_markup=reply_markup
     )
     context.user_data['current_menu'] = None
