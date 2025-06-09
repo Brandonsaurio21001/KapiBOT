@@ -1,0 +1,47 @@
+{
+  "main_menu": {
+    "1": "Guía de horario y planes de estudio"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Donde veo la guía de horario?",
+      "b": "Tengo un choque de horario, ¿Qué debo hacer?",
+      "c": "¿Porque los cursos me salen reservados?",
+      "d": "¿Qué significa el tipo de impartición de grupo?",
+      "e": "¿Cuando puedo matricular cursos de otras Sedes?",
+      "f": "¿Los cursos Cultural y Deportivos se pueden llevar juntos?",
+      "g": "¿Por qué no puedo matricular un curso que aparece en la guía de horarios?",
+      "h": "¿Donde puedo ver mi plan de estudios?",
+      "i": "¿Dónde consulto la fecha para reservar cupo si estoy por graduarme?"
+    }
+  },
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, [Click aquí para ver guía de horarios](https://tec-appsext.itcr.ac.cr/guiahorarios/escuela.aspx)"
+    },
+    "1b": {
+      "text": "Hola {username}, Debe ponerse en contacto con su coordinador de carrera, si la opción es factible se puede hacer levantamiento del choque."
+    },
+    "1c": {
+      "text": "Hola {username}, Si un curso se encuentra reservado el sistema de matrícula te lo indicará y esto significa que son para poblaciones especificas o solo podrás matricularlos en la matricula extraordinaria."
+    },
+    "1d": {
+      "text": "Hola {username}, Ingresá al siguiente enlace y verás el significado de cada uno [ver Glosario](https://www.tec.ac.cr/sites/default/files/media/doc/gaceta_no._1092-2023_glosario_institucional_actualizado_al_15-05-2023._publicado_en_fecha_12-05-2023.pdf)"
+    },
+    "1e": {
+      "text": "Hola {username}, Únicamente en la matricula extraordinaria."
+    },
+    "1f": {
+      "text": "Hola {username}, Solo se podrá matricular un curso cultural o deportiva según lo indique su plan de estudios, no se pueden matricular ambos en un mismo semestre."
+    },  
+    "1g": {
+      "text": "Hola {username}, Debés revisar si cumple con los requisitos y correquisitos en los planes de estudio donde usted está ubicado."
+    },
+    "1h": {
+      "text": "Hola {username}, aquí puedes [Consultar planes](https://www.tec.ac.cr/planes-estudio-elaboracion-horario-clase)"
+    },
+    "1i": {
+      "text": "Hola {username}, puedes [Consultar enlace](https://www.tec.ac.cr/semestre-verano)"
+    }
+  }
+}

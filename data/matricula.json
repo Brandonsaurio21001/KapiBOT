@@ -1,0 +1,75 @@
+{
+  "main_menu": {
+    "1": "Sistema de matrícula",
+    "2": "Informe de matrícula",
+    "3": "Reingreso",
+    "4": "Empadronamiento a la licenciatura para egresados",
+    "5": "Cambio de Plan"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "No encuentro mi hora de cita de matrícula",
+      "b": "Estoy en mi hora de cita ¿porqué no me salen los cursos a matricular?",
+      "c": "Cómo hago mi matrícula?",
+      "d": "Cómo ingreso al sistema de matrícula?",
+      "e": "Cómo se que los cursos están matriculados?",
+      "f": "Me cambié de carrera por Examen de Admisión ¿Cómo debe hacer mi matrícula?",
+      "g": "Me quedé sin matrícula, cómo hago una inclusión de matrícula"
+    },
+    "2": {
+      "a": "Cómo imprimo el informe de matrícula",
+      "b": "Qué pasa si el informe no me llega al correo",
+      "c": "Cómo obtengo el documento para el seguro CCSS?"
+    },
+    "3": {
+      "a": "Cómo solicito reingreso?"
+    },
+    "4": {
+      "a": "Cómo solicito el empadronamiento a la licenciatura para egresados?"
+    },
+    "5": {
+      "a": "Cómo solicito cambio de plan?"
+    }    
+  },
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1b": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1c": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1d": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1e": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1f": {
+      "text": "Hola {username}, Si ya sos estudiante de la institución, se te enviará un correo electrónico a tu cuenta @estudiantec.cr. Una vez confirmado tu interes, se le enviará la información del proceso de matrícula a realizar. En su caso, no es necesario que realice una nueva cuenta @estudiantec.cr, ni que suba los documentos de primer ingreso; ya que realizará la matrícula con su cuenta actual."
+    },
+    "1g": {
+      "text": "Hola {username}, Debe solicitaralo al Director de la escuela que imparte el curso. Cada escuela le proporcionará los pasos a seguir para dicha solicitud."
+    },
+    "2a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "2b": {
+      "text": "Hola {username}, Puede obtener su Informe de Matrícula en cualquier momento. Puede corroborar que los cursos estén correctamente matriculados en la opción “Mi Horario” y/o que tengan el check color verde a la derecha del curso. Una vez que haya confirmado esta información, puede salir del sistema e ingresar en otro momento para enviarse el Informe de Matrícula a su correo electrónico."
+    },
+    "2c": {
+      "text": "Hola {username}, Una vez que te llegue el informe de matrícula a tu correo @estudiantec.cr, debes enviar el informe a clinicatec@tec.ac.cr, solicitando el documento correspondiente."
+    },
+    "3a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: https://www.tec.ac.cr/tramites-servicios/reingresos"
+    },
+    "4a": {
+      "text": "Hola {username}, Ingresá  al siguiente en lace: https://www.tec.ac.cr/tramites-servicios/admision-programas-licenciatura"
+    },
+    "5a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: https://www.tec.ac.cr/tramites-servicios/cambio-plan"
+    }
+  }
+}
