@@ -1,39 +1,78 @@
-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackContext, CommandHandler, CallbackQueryHandler
 import json
+import os
 
-# Cargar estructura desde JSON
-with open("data/matricula.json", encoding="utf-8") as f:
-    estructura = json.load(f)
+# Función para cargar el JSON según tipo de estudiante
+def cargar_estructura(tipo):
+    ruta = f"data/matricula_{tipo}.json"
+    if not os.path.exists(ruta):
+        return None
+    with open(ruta, encoding="utf-8") as f:
+        return json.load(f)
 
-main_menu = estructura["main_menu"]
-main_menu_submenus = estructura["main_menu_submenus"]
-faq_respuestas = estructura["faq_respuestas"]
-
-# Comando /matricula
+# Paso 1: /matricula → elegir tipo
 async def matricula_command(update: Update, context: CallbackContext):
     keyboard = [
-        [InlineKeyboardButton(text=v, callback_data=f"mat-{k}")] for k, v in main_menu.items()
+        [
+            InlineKeyboardButton("🔰 Nuevo Ingreso", callback_data="matricula_tipo_NI"),
+            InlineKeyboardButton("🎓 Estudiante Regular", callback_data="matricula_tipo_ER")
+        ]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-        "Seleccioná una categoría de matrícula:", reply_markup=reply_markup
+        "¿Sos estudiante de nuevo ingreso o estudiante regular?",
+        reply_markup=reply_markup
     )
-    context.user_data["current_menu_matricula"] = None
 
-# Manejo del menú principal
-async def handle_main_menu_matricula(update: Update, context: CallbackContext):
+# Paso 2: Selección del tipo de estudiante
+async def seleccionar_tipo_estudiante(update: Update, context: CallbackContext):
     query = update.callback_query
     await query.answer()
-    selection = query.data.replace("mat-", "")
+
+    tipo = query.data.split("_")[-1]  # "NI" o "ER"
+    context.user_data["tipo_estudiante_matricula"] = tipo
+
+    estructura = cargar_estructura(tipo)
+    if not estructura:
+        await query.edit_message_text("Error cargando los datos. Intentá más tarde.")
+        return
+
+    context.user_data["estructura_matricula"] = estructura
+    context.user_data["matricula_current_menu"] = None
+
+    main_menu = estructura["main_menu"]
+    keyboard = [
+        [InlineKeyboardButton(text=v, callback_data=f"matricula_{k}")]
+        for k, v in main_menu.items()
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    await query.edit_message_text(
+        "Seleccioná una categoría sobre matrícula:",
+        reply_markup=reply_markup
+    )
+
+# Paso 3: Manejo del menú principal
+async def handle_main_menu(update: Update, context: CallbackContext):
+    query = update.callback_query
+    await query.answer()
+    selection = query.data.replace("matricula_", "")
+
+    estructura = context.user_data.get("estructura_matricula")
+    if not estructura:
+        await query.edit_message_text("Por favor iniciá con /matricula.")
+        return
+
+    main_menu = estructura["main_menu"]
+    main_menu_submenus = estructura["main_menu_submenus"]
 
     if selection in main_menu:
-        context.user_data["current_menu_matricula"] = selection
+        context.user_data["matricula_current_menu"] = selection
         submenu = main_menu_submenus.get(selection, {})
         keyboard = [
-            [InlineKeyboardButton(text=v, callback_data=f"mat-{selection}{k}")]
+            [InlineKeyboardButton(text=v, callback_data=f"matricula_{selection}{k}")]
             for k, v in submenu.items()
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -45,30 +84,32 @@ async def handle_main_menu_matricula(update: Update, context: CallbackContext):
     else:
         await query.edit_message_text("Opción inválida.")
 
-# Manejo del submenú
-async def handle_submenu_matricula(update: Update, context: CallbackContext):
+# Paso 4: Manejo del submenú
+async def handle_submenu(update: Update, context: CallbackContext):
     query = update.callback_query
-    selection = query.data.replace("mat-", "")
+    await query.answer()
+    selection = query.data.replace("matricula_", "")
     user_name = query.from_user.first_name
 
-    menu_key = context.user_data.get("current_menu_matricula")
-    response_key = selection
-
-    if menu_key:
-        respuesta = faq_respuestas.get(response_key)
-
-        if respuesta:
-            text = respuesta["text"].replace("{username}", user_name or "usuario")
-            await query.edit_message_text(text, parse_mode="Markdown")
-        else:
-            await query.edit_message_text("No se encontró una respuesta para esta opción.")
-    else:
+    estructura = context.user_data.get("estructura_matricula")
+    if not estructura:
         await query.edit_message_text("Por favor iniciá con /matricula.")
+        return
 
+    faq_respuestas = estructura["faq_respuestas"]
+    respuesta = faq_respuestas.get(selection)
+
+    if respuesta:
+        text = respuesta["text"].replace("{username}", user_name or "usuario")
+        await query.edit_message_text(text, parse_mode="Markdown")
+    else:
+        await query.edit_message_text("Esta opción no tiene información disponible para tu tipo de estudiante.")
+
+# Registro de handlers
 def get_handlers():
     return [
         CommandHandler("matricula", matricula_command),
-        CallbackQueryHandler(handle_main_menu_matricula, pattern=r"^mat-[1-5]$"),
-        CallbackQueryHandler(handle_submenu_matricula, pattern=r"^mat-[1-5][a-g]$")
+        CallbackQueryHandler(seleccionar_tipo_estudiante, pattern=r"^matricula_tipo_(NI|ER)$"),
+        CallbackQueryHandler(handle_main_menu, pattern=r"^matricula_[1-9]$"),
+        CallbackQueryHandler(handle_submenu, pattern=r"^matricula_[1-9][a-z]$")
     ]
-

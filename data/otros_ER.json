@@ -1,0 +1,50 @@
+{
+  "main_menu": {
+    "1": "Certificaciones ",
+    "2": "Cambio de carrera ",
+    "3": "Equiparación de asignaturas",
+    "4": "Retiro de cursos",
+    "5": "Suficiencias"
+  },
+
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Como solicito una certificación ?"
+    },
+    "2": {
+      "a": "¿Como solicito un cambio de carrera?"
+    },
+    "3": {
+      "a": "¿Como equiparo asignaturas?"
+    },
+    "4": {
+      "a": "¿Como solicito un retiro de materias ordinario?",
+      "b": "¿Como solicito un retiro Justificado Especial?"
+    },
+    "5": {
+      "a": "¿Como solicito una suficiencia?"
+    }
+},
+
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, revisa el procedimiento en el siguiente enlace: [Certificaciones](https://www.tec.ac.cr/tramites-servicios/solicitud-certificacion).\n\n Para consultas adicionales podés contactar a:\nLicda. Ana Catalina Arias Vega\nÁrea de Rendimiento Académico\n✉️ carias@tec.ac.cr\n📞 2550-2669"
+    },
+    "2a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Cambio de carrera](https://www.tec.ac.cr/tramites-servicios/cambio-carrera).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    },
+    "3a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Equiparación de asignaturas](https://www.tec.ac.cr/equiparacion-asignaturas).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    },
+    "4a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Retiro de cursos](https://www.tec.ac.cr/retiro-materias-ordinario).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    },
+    "4b": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Retiro de cursos](https://www.tec.ac.cr/retiro-materias-ordinario).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    },
+    "5a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Cambio de carrera](https://www.tec.ac.cr/tramites-servicios/cambio-carrera).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    }
+  }
+}

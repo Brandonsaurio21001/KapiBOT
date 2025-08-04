@@ -1,0 +1,64 @@
+{
+  "main_menu": {
+    "1": "Sistema de matrícula",
+    "2": "Informe de matrícula",
+    "3": "Empadronamiento a la licenciatura para egresados",
+    "4": "Contactos"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "No encuentro mi hora de cita de matrícula",
+      "b": "Estoy en mi hora de cita ¿porqué no me salen los cursos a matricular?",
+      "c": "¿Cómo hago mi matrícula?",
+      "d": "¿Cómo ingreso al sistema de matrícula?",
+      "e": "¿Cómo se que los cursos están matriculados?",
+      "f": "¿Cómo hago una inclusión de matrícula?"
+    },
+    "2": {
+      "a": "Cómo imprimo el informe de matrícula",
+      "b": "Qué pasa si el informe no me llega al correo",
+      "c": "Cómo obtengo el documento para el seguro CCSS?"
+    },
+    "3": {
+      "a": "¿Cómo solicito el empadronamiento a una licenciatura como persona egresada?"
+    },
+    "4": {
+      "a": "Contactar área de matrícula"
+    }
+  },
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, ingresá al siguiente enlace: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1b": {
+      "text": "Hola {username}, revisá este video para conocer las posibles razones: [Ver video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1c": {
+      "text": "Hola {username}, te explicamos el paso a paso en este video: [Ver video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1d": {
+      "text": "Hola {username}, mirá este video para ver cómo acceder correctamente: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1e": {
+      "text": "Hola {username}, en el siguiente video te explicamos [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "1f": {
+      "text": "Hola {username}, debés solicitar la inclusión directamente con la persona directora de la escuela que imparte el curso. Cada escuela te indicará los pasos a seguir."
+    },
+    "2a": {
+      "text": "Hola {username}, en este video te mostramos cómo hacerlo: [Video explicativo](https://www.tec.ac.cr/matricula-primer-ingreso)"
+    },
+    "2b": {
+      "text": "Hola {username}, podés revisar en la opción “Mi Horario” que los cursos estén matriculados (marcados con el ✔️ verde). Si no te llega el informe, podés: Descargarlo más tarde desde el sistema. cConsultar escribiendo a: admisionyregistro@itcr.ac.cr"
+    },
+    "2c": {
+      "text": "Hola {username}, mirá esye video con las instrucciones: [Video](https://www.tec.ac.cr/matricula-primer-ingreso). Luego, cuando recibás el informe de matrícula, envialo al correo 📧 clinicatec@tec.ac.cr solicitando el documento correspondiente. "
+    },
+    "3a": {
+      "text": "Hola {username}, consultá el proceso aquí: [empadronamiento](https://www.tec.ac.cr/tramites-servicios/admision-programas-licenciatura)"
+    },
+    "4a": {
+      "text": "Hola {username}, si necesitás contactar al área encargada, podés llamar al 2550-2255, 2550-2400 o escribir al correo: matricula@tec.ac.cr, xsalas@tec.ac.cr o rsandoval@tec.ac.cr  "
+    }
+  }
+}

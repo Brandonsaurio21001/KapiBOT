@@ -1,11 +1,9 @@
 # coding=utf-8
 # -*- coding: utf-8 -*-
 
-##BOT TELEGRAM DE PPREGUNTAS FRECUENTES###
-###DESARROLLADO POR BRANDON BADILLA LEITÓN PARA EL ÁREA DE EXPEDIENTES ESTUDIANTILES
-###DEL INSTITUTO TECNOLÓGICO DE COSTA RICA
-
-
+#----BOT TELEGRAM DE PPREGUNTAS FRECUENTES###
+#----DESARROLLADO POR BRANDON BADILLA LEITÓN PARA EL DEPARTAMENTO DE ADMISIÓN Y REGISTRO 
+#----INSTITUTO TECNOLÓGICO DE COSTA RICA
 
 ###MODULO 1 IMPORTACIONES Y DEPENDENCIAS
 """
@@ -19,23 +17,25 @@ para instalar las librerías, en cmd:
 pip install python-telegram-bot python-dotenv
 
 """
-
 import os
 from dotenv import load_dotenv
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
-    CallbackContext,
     CommandHandler,
+    MessageHandler,
+    CallbackContext,
+    filters,
 )
-from handlers.admision_handler import get_handlers as admision_handlers
-from handlers.guiashorarios_handler import get_handlers as guias_handlers
-from handlers.matricula_handler import get_handlers as matricula_handlers
 from handlers.expediente_handler import get_handlers as expediente_handlers
-from telegram.ext import MessageHandler, filters
-# Cargar token desde .env
+from handlers.guiashorarios_handler import get_handlers as guias_handlers
+from handlers.admision_handler import get_handlers as admision_handlers
+from handlers.matricula_handler import get_handlers as matricula_handlers
+from handlers.otros_handler import get_handlers as otros_handlers
+
+# Cargar el token desde el .env
 load_dotenv()
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = os.getenv("TOKEN")
 
 if not TOKEN:
     raise ValueError("Falta el token en el archivo .env")
@@ -51,13 +51,13 @@ async def start(update: Update, context: CallbackContext):
         "• /admision — Preguntas frecuentes sobre el proceso de admisión.\n"
         "• /guiashorarios — Consultas sobre el uso de la guía de horarios.\n"
         "• /matricula — Dudas comunes sobre el sistema de matrícula.\n"
-        "• /expediente — Información relacionada al expediente estudiantil.\n\n"
-        "Puedes consultar la lista de comandos en el menú de la parte inferior.\n"
-        "_Desarrollado por: Ing. Brandon Badilla Leitón_",
+        "• /expediente — Información relacionada al expediente estudiantil.\n"
+        "• /otrostramites — Consultar otros trámites y servicios.\n\n"
+        "Puedes consultar la lista de comandos en el menú de la parte inferior.\n",
         parse_mode="Markdown"
     )
 
-# Handler para cualquier mensaje de texto no comando
+# Handler para cualquier mensaje de texto que no sea un comando
 async def handle_messages(update: Update, context: CallbackContext):
     user_name = update.message.from_user.first_name
     response_text = (
@@ -67,29 +67,43 @@ async def handle_messages(update: Update, context: CallbackContext):
     )
     await update.message.reply_text(response_text, parse_mode="Markdown")
 
+
+
+# Función principal
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
-
-    # Comando de bienvenida
     app.add_handler(CommandHandler("start", start))
-
-    # Handlers por módulo
-    for handler in admision_handlers():
-        app.add_handler(handler)
-
-    for handler in guias_handlers():
-        app.add_handler(handler)
-
-    for handler in matricula_handlers():
-        app.add_handler(handler)
-
+    # Handlers
     for handler in expediente_handlers():
         app.add_handler(handler)
-
-    app.add_handler(MessageHandler(filters.TEXT, handle_messages))
-
+    for handler in guias_handlers():
+        app.add_handler(handler)
+    for handler in admision_handlers():
+        app.add_handler(handler)
+    for handler in matricula_handlers():
+        app.add_handler(handler) 
+    for handler in otros_handlers():
+        app.add_handler(handler)
+    # Mensaje por defecto
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_messages))
     print("KapiBOT está corriendo... esperando interacciones.")
-    app.run_polling()
+    try:
+        app.run_polling()
+    except KeyboardInterrupt:
+        print("KapiBOT detenido con Ctrl+C.")
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+

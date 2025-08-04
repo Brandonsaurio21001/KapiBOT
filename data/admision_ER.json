@@ -1,0 +1,42 @@
+{
+  "main_menu": {
+    "1": "Formas de ingreso al TEC",
+    "2": "Folleto informativo",
+    "3": "Contacto"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "Ingreso por Examen de Admisión",
+      "b": "Ingreso por Exención del Puntaje de Admisión",
+      "c": "Ingreso por Convenio de Articulación y Cooperación de la Educación Estatal de Costa Rica",
+      "d": "Ingreso por Revalidación del Examen de Admisión"
+    },
+    "2": {
+      "a": "Deseo información adicional sobre el proceso de admisión"
+    },
+    "3": {
+      "a": "Contactar área de admisión"
+  }
+},
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Calendario de Admisión](https://www.tec.ac.cr/examen-admision)."
+    },
+    "1b": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Exención del Puntaje de Admisión](https://www.tec.ac.cr/exencion-examen-admision)."
+    },
+    "1c": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Convenio de Articulación](https://www.tec.ac.cr/convenio-articulacion-cooperacion-educacion-estatal-costa-rica)."
+    },
+    "1d": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Revalidación](https://www.tec.ac.cr/revalidacion-examen-admision)."
+    },
+    "2a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Folleto](https://www.tec.ac.cr/sites/default/files/media/doc/folleto-informativo-admision-tec-2025-2026-1.pdf)"
+    },
+    "3a": {
+      "text": "Hola {username}, si necesitás contactar al área encargada, podés llamar al 2550-2476, 2550-2363 y 2550-2031 o escribir al correo: admision@tec.ac.cr , emontero@tec.ac.cr"
+    }
+  }
+}

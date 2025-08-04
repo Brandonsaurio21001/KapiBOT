@@ -1,0 +1,122 @@
+{
+  "main_menu": {
+    "1": "Formas de ingreso al TEC",
+    "2": "Fechas importantes y calendario",
+    "3": "Sobre el examen de admisión",
+    "4": "Elección de carrera",
+    "5": "Calculo del promedio de Educación Diversificada",
+    "6": "Requisitos según el tipo de estudiante",
+    "7": "Folleto informativo",
+    "8": "Contacto"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "Ingreso por Examen de Admisión",
+      "b": "Ingreso por Exención del Puntaje de Admisión",
+      "c": "Ingreso por Convenio de Articulación y Cooperación de la Educación Estatal de Costa Rica",
+      "d": "Ingreso por Revalidación del Examen de Admisión"
+    },
+    "2": {
+      "a": "¿Dónde puedo ver las fechas del proceso de admisión?",
+      "b": "¿Cuándo publican el resultado del examen de admisión?"
+    },
+    "3": {
+      "a": "¿Dónde puedo ver ejercicios y recomendaciones para el examen?",
+      "b": "¿Cómo se califica el examen de admisión?",
+      "c": "¿Qué significa mi resultado de admisión (Admitido, En espera, Elegible, No elegible, etc.)?",
+      "d": "¿Dónde veo los cortes de carrera?"
+    },
+    "4": {
+      "a": "¿Cuando es mi eleccion definitiva de carrera?",
+      "b": "¿Dónde puedo consultar las carreras disponibles?"
+    },
+    "5": {
+      "a": "¿Cuáles materias se consideran para el promedio?",
+      "b": "Para estudiantes ACTUALES de secundaria:",
+      "c": "Para estudiantes EGRESADOS de secundaria",
+      "d": "Para ESTUDIANTES o EGRESADOS DE EDUCACIÓN ABIERTA",
+      "e": "¿Cuándo publican el promedio de educación diversificada?"
+    },
+    "6": {
+      "a": "Soy estudiante actual de colegio secundaria",
+      "b": "Soy egresadodel sistema educativo formal de Costa Rica",
+      "c": "Soy egresado de una institución en el exterior"
+    },
+    "7": {
+      "a": "Deseo información adicional sobre el proceso de admisión"
+    },
+    "8": {
+      "a": "Contactar área de admisión"
+  }
+},
+
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Calendario de Admisión](https://www.tec.ac.cr/examen-admision)."
+    },
+    "1b": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Exención del Puntaje de Admisión](https://www.tec.ac.cr/exencion-examen-admision)."
+    },
+    "1c": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Convenio de Articulación](https://www.tec.ac.cr/convenio-articulacion-cooperacion-educacion-estatal-costa-rica)."
+    },
+    "1d": {
+      "text": "Hola {username}, información detallada en el siguiente enlace: [Revalidación](https://www.tec.ac.cr/revalidacion-examen-admision)."
+    },
+    "2a": {
+      "text": "Hola {username}, consultá el Calendario de Admisión en el siguiente enlace: [Calendario de Admisión](https://www.tec.ac.cr/calendario-institucional-academico)"
+    },
+    "2b": {
+      "text": "Hola {username}, el resultado estará disponible en el [Sistema de Admisión TEC](https://tec-appsext.itcr.ac.cr/AdmisionTEC) consultá la fecha exacta en el Calendario de admisión."
+    },
+    "3a": {
+      "text": "Hola {username}, ingresá al sitio del [Comité Examen de Admisión TEC](https://www.tec.ac.cr/comite-examen-admision-tec)"
+    },
+    "3b": {
+      "text": "Hola {username}, la calificación se obtiene mediante doble lectura óptica de la hoja de respuestas. Solo se califica lo que marcás en esa hoja. Las preguntas son técnicas, objetivas y confidenciales. "
+    },
+    "3c": {
+      "text": "Hola {username}, ingresá aquí para conocer el significado de cada estado: [Condiciones de admisión](https://www.tec.ac.cr/sites/default/files/media/doc/condiciones-del-resultado-de-admision.pdf)"
+    },
+    "3d": {
+      "text": "Hola {username}, se puede consultar el documento PDF aquí: [Cortes](https://www.tec.ac.cr/sites/default/files/media/doc/notas-de-corte-2023-2024-y-2025-para-web.pdf). También al ingresar al Sistema de Admisión, en la parte superior derecha de la pantalla de resultados."
+    },
+    "4a": {
+      "text": "Hola {username}, El día del examen debés marcar tu opción en la hoja de respuestas. En octubre recibirás un correo para verificar o cambiar tu elección en el sistema. Luego de esa fecha, no se permitirán cambios."
+    },
+    "4b": {
+      "text": "Hola {username}, ingresá aquí: [Carreras disponibles Examen de Admisión](https://www.tec.ac.cr/oferta-academica). Recordá que algunas carreras tienen zona de influencia, lo cual puede afectar el ingreso según tu lugar de residencia."
+    },
+    "5a": {
+      "text": "Hola {username}, se toman en cuenta: Español, Matemática, Estudios Sociales, Educación Cívica, Lengua Extranjera (inglés o francés, la más alta), y Ciencia (Biología, Química o Física, la más alta)."
+    },
+    "5b": {
+      "text": "Hola {username}, *Colegios académicos, científicos, humanísticos, experimentales bilingües y participantes del programa Bachillerato Internacional:*\nSe considera el promedio de las calificaciones obtenidas en *décimo año*.\n\n📌 *Colegios técnicos y artísticos:*\nSe considera el promedio de las calificaciones obtenidas en *décimo y undécimo año*."
+    },
+    "5c": {
+      "text": "Hola {username}, *Colegios académicos, científicos, humanísticos, experimentales bilingües y participantes del programa de Bachillerato Internacional:*\nSe considera el promedio de las calificaciones obtenidas en *décimo y undécimo año*.\n\n📌 *Colegios técnicos y artísticos:*\nSe considera el promedio de las calificaciones obtenidas en *décimo, undécimo y duodécimo año*."
+    },
+    "5d": {
+      "text": "Hola {username}, se calcula el promedio a partir de las calificaciones obtenidas en las pruebas de cada materia (prueba 1 y 2, o única prueba). Si no tenés la nota de alguna prueba, se asigna un 70 para el cálculo."
+    },
+    "5e": {
+      "text": "Hola {username}, se publicará en el Sistema de Admisión TEC. Las fechas estarán disponibles en el [Calendario de Admisión](https://www.tec.ac.cr/calendario-admision) y se enviará un correo con la información."
+    },
+    "6a": {
+      "text": "Hola {username}, El M.E.P entregará la base de datos con las notas de Educación Diversificada, se informará una vez se publiquen los promedios en el Sistema de Admisión TEC, estar pendiente al Calendario de Admisión"
+    },
+    "6b": {
+      "text": "Hola {username}, *Pedí al colegio una certificación oficial con tus calificaciones:*\n\n• *Colegios académicos:* décimo y undécimo\n• *Colegios técnicos:* décimo, undécimo y duodécimo\n\n *Completá el formulario y subí la certificación en:* [Formulario de promedio Examen de Admisión](https://www.tec.ac.cr/form/webform-34602)\n\n *Si tiene firma física, enviá el original a:*\nInstituto Tecnológico de Costa Rica\nDepartamento de Admisión y Registro\nAtención: María Elena Montero Rojas\nCartago, 700 m sur del estadio Fello Meza\nApartado 159-7050, Código postal 30102\n\n *Consultá fechas límite a:* admisión@itcr.ac.cr"
+    },
+    "6c": {
+      "text": "Hola {username}, *Presentá certificación de los dos últimos años aprobados con cada calificación.*\n\nLa certificación debe:\n• Estar apostillada o autenticada por embajada/consulado.\n• Incluir escala de calificaciones.\n• Estar traducida oficialmente al español.\n\n *Subila al* [Formulario de promedio Examen de Admisión](https://www.tec.ac.cr/form/webform-34602)\n\n *También debés enviarla físicamente a la dirección mencionada arriba.*\n\n *Consultá fechas a:* admisión@itcr.ac.cr"
+    },
+    "7a": {
+      "text": "Hola {username}, Ingresá al siguiente enlace: [Folleto](https://www.tec.ac.cr/sites/default/files/media/doc/folleto-informativo-admision-tec-2025-2026-1.pdf)"
+    },
+    "8a": {
+      "text": "Hola {username}, si necesitás contactar al área encargada, podés llamar al 2550-2476, 2550-2363 y 2550-2031 o escribir al correo: admision@tec.ac.cr , emontero@tec.ac.cr"
+    }
+  }
+}

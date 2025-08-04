@@ -1,0 +1,18 @@
+{
+  "main_menu": {
+    "1": "Suficiencias"
+  },
+
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Como solicito una suficiencia?"
+    }
+},
+
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Cambio de carrera](https://www.tec.ac.cr/tramites-servicios/cambio-carrera).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    }
+  }
+}

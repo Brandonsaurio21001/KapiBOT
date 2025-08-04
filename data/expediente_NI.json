@@ -1,0 +1,92 @@
+{
+  "main_menu": {
+    "1": "Problemas con mi cuenta @estudiantec",
+    "2": "Carné insitucional",
+    "3": "Documentos de primer ingreso",
+    "4": "Contactos"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Cuál es mi cuenta @estudiantec.cr?",
+      "b": "Olvidé mi contraseña de mi cuenta @estudiantec.cr",
+      "c": "Cambiar mi número telefónico para obtener los códigos de verificación",
+      "d": "No me llegan los códigos de verificación para el ingreso a mi correo institucional",
+      "e": "Mi número no corresponde al asociado a mi cuenta microsoft",
+      "f": "¿Cómo configurar el Múltiple Factor de Autenticación?",
+      "g": "¿Cómo agregar otro metodo de autenticación?",
+      "h": "No puedo validar con el segundo método de Autenticación"
+    },
+    "2": {
+      "a": "¿Cuándo me entregan el carné estudiantil?"
+    },
+    "3": {
+      "a": "¿Donde esta el enlace del Sistema de Digitalización de Documentos de Primer Ingreso?",
+      "b": "¿Qué características debe tener la fotografía?",
+      "c": "Consideraciones al subir mi documento de identificación",
+      "d": "Consideraciones al subir el título/diploma de Bachillerato",
+      "e": "Consideraciones al subir la Declaración Jurada para menores",
+      "f": "¿Qué anoto si mi titulo no posee el asiento?",
+      "g": "¿Qué documentos extra necesito para ingreso por exención?",            
+      "h": "¿Qué documentos extra necesito para ingreso por convenio de articulación?"
+    },
+    "4": {
+      "a": "Contactar área de expedientes"
+    }
+  },
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, en este caso debes hacer solicitud al correo expedientedigital@itcr.ac.cr. Adjunta la cédula vigente por ambos lados."
+    },
+    "1b": {
+      "text": "Hola {username}, lo que debes hacer es crear una contraseña temporal: [Video explicativo](https://www.youtube.com/watch?v=7txicJVjfMM )"
+    },
+    "1c": {
+      "text": "Hola {username}, hacé la solicitud a expedientedigital@itcr.ac.cr y adjuntá documento identificación vigente por ambos lados  "
+    },
+    "1d": {
+      "text": "Hola {username}, eso es debido a que el número de celular no esta registrado en sistemas DAR para ello hacé la solicitud para agregarlo al correo expedientedigital@itcr.ac.cr. Una vez agregado el número y si aún persiste el problema consultá a soporte@estudiantec.cr "
+    },
+    "1e": {
+      "text": "Hola {username}, Contactá al DATIC al correo: soporte@estudiantec.cr  "
+    },
+    "1f": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf) para ver los pasos a seguir"
+    },
+    "1g": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_como_agregar_metodo_0.pdf) para ver los pasos a seguir"
+    },
+    "1h": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf) para ver los pasos a seguir"
+    },
+    "2a": {
+      "text": "Hola {username}, cuando consolides tu matrícula se te confeccionará el carné. Por favor estar atento(a) a la notificación a su correo @estudiantec.cr"
+    },
+    "3a": {
+      "text": "Hola {username}, ingresá al siguiente enlace: [Sistema Digitalización de Documentos de Primer Ingreso](https://aplics.tec.ac.cr/Digitalizacion/Account/LogOn)"
+    },
+    "3b": {
+      "text": "Hola {username}, ingresá al Video tutorial: [Consideraciones para Fotografía](https://www.youtube.com/watch?v=kox3VJSfErE) o bien ingresá a [Documentos primer ingreso](https://www.tec.ac.cr/documentos-primer-ingreso) ver Paso 3, punto 2"
+    },
+    "3c": {
+      "text": "Hola {username}, ingresá al Video tutorial: [Digitalización de documentos](https://www.youtube.com/watch?v=HHWyzOelcpE) o bien ingresá a [Documentos primer ingreso](https://www.tec.ac.cr/documentos-primer-ingreso) ver Paso 3, punto 1"
+    },
+    "3d": {
+      "text": "Hola {username}, ingresá al Video tutorial: [Digitalización de documentos](https://www.youtube.com/watch?v=HHWyzOelcpE) o bien ingresá a [Documentos primer ingreso](https://www.tec.ac.cr/documentos-primer-ingreso) ver Paso 3, punto 3"
+    },
+    "3e": {
+      "text": "Hola {username}, ingresá al Video tutorial: [Digitalización de documentos](https://www.youtube.com/watch?v=HHWyzOelcpE) o bien ingresá a [Documentos primer ingreso](https://www.tec.ac.cr/documentos-primer-ingreso) ver Paso 3, punto 4"
+    },
+    "3f": {
+      "text": "Hola {username}, Por favor anotar un 00 en el espacio del asiento."
+    },
+    "3g": {
+      "text": "Hola {username}, si has sido admitido(a) por Exención de examen de admisión debés subir adicionalmente:\n\na) Certificación de materias de la institución nacional que presentaste para dicho proceso. Este debe ir en el apartado *“Otros documentos”*\n\nb) Certificación extranjera debe estar apostillada o legalizada y traducida al idioma español por un traductor oficial en los casos que se requiera. Ministerio de Relaciones Exteriores y Culto. Este debe ir en el apartado *“Otros documentos”*"
+    },
+    "3h": {
+      "text": "Hola {username}, si has sido admitido(a) por Convenio de Articulación debés subir adicionalmente:\n\na) Certificación de materias aprobadas que presentaste para dicho proceso. Este debe ir en el apartado *“Otros documentos”*\n\nb) Diploma o su equivalente. Este debe ir en el apartado *“Certificados o Títulos”*"
+    },
+    "4a": {
+      "text": "Hola {username}, Si necesitás contactar al área encargada, podés llamar al 2550-2159 o escribir al correo: expedientedigital@tec.ac.cr"
+    }
+  }
+}

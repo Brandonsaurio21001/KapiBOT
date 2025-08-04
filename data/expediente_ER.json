@@ -1,0 +1,108 @@
+{
+  "main_menu": {
+    "1": "Problemas con mi cuenta @estudiantec",
+    "2": "Carné insitucional",
+    "3": "Cambio de información de mi expediente",
+    "4": "Contactos"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "He olvidado mi contraseña de mi cuenta @estudiantec.cr",
+      "b": "¿Cuál es mi correo de recuperación (secundario)?",
+      "c": "¿Cómo cambiar mi correo de recuperación (secundario)?",
+      "d": "¿Cómo puedo cambiar el número asociado a la cuenta institucional?",
+      "e": "No recibo los códigos de verificación, ¿qué hago?",
+      "f": "Aparece otro número asociado a mi cuenta Microsoft 365",
+      "g": "¿Como configurar el Múltiple Factor de Autenticación?",
+      "h": "¿Como agregar otro metodo de autenticación? ",
+      "i": "No puedo validar con el segundo método de Autenticación"
+    },
+    "2": {
+      "a": "Activar mi carné para acceso vehicular y uso de parqueos",
+      "b": "Activar mi carné para acceso laimi, bibliotec",
+      "c": "Solicitar la reposición de mi carné",
+      "d": "Soy estudiante de posgrado y necesito mi carné. ¿Qué trámite hago?",
+      "e": "Deseo cancelar mi solicitud de reposición de carné ."
+    },
+    "3": {
+      "a": "Actualizar mi TIM por la cédula de mayoría de edad?",
+      "b": "Actualizar mi dimex, didi, pasaporte o comprobante de trámite o cita?",
+      "c": "Actualizar la foto de mi expediente?",
+      "d": "Notificar cambio de dirección de residencia temporal o permanente?",
+      "e": "¿Cómo actualizar mi cambio de apellidos?",
+      "f": "cambio de nombre por identidad de género autopersibida ",
+      "g": "Tengo mi información desactualizada en el Tec Digital."        
+    },
+    "4": {
+      "a": "Contactar área de expedientes"
+    }
+  },
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, lo que debes hacer es crear una contraseña temporal: [Video explicativo](https://www.youtube.com/watch?v=7txicJVjfMM )"
+    },
+    "1b": {
+      "text": "Hola {username}, ingresá y registrate a [Mi Cuenta Tec](https://aplics.tec.ac.cr/MiCuentaTEC/)"
+    },
+    "1c": {
+      "text": "Hola {username}, Puedes cambiar el correo de recuperación, ingresando a [Mi Cuenta Tec](https://aplics.tec.ac.cr/MiCuentaTEC/) o mandando la solicitud al correo expedientedigital@estudiantec.cr"
+    },
+    "1d": {
+      "text": "Hola {username}, hacé la solicitud a expedientedigital@itcr.ac.cr y adjuntá documento identificación vigente por ambos lados "
+    },
+    "1e": {
+      "text": "Hola {username}, Verificá que el número de celular esté registrado en sistemas DAR al correo expedientedigital@itcr.ac.cr. Una vez verificado el número y si aún persiste el problema consultá a soporte@estudiantec.cr "
+    },
+    "1f": {
+      "text": "Hola {username}, contactá al datic  al correo:  soporte@estudiantec.cr   o ve tutoriales en youtube para poder cambiarlo."
+    },
+    "1g": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_como_agregar_metodo_0.pdf) para ver los pasos a seguir"
+    },
+    "1h": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf) para ver los pasos a seguir"
+    },
+    "1i": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf) para ver los pasos a seguir"
+    },
+    "2a": {
+      "text": "Hola {username}, ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf))"
+    },
+    "2b": {
+      "text": "Hola {username}, ingresá [aquí](ingresá al siguiente [Manual](ingresá al siguiente [Manual](https://www.tec.ac.cr/sites/default/files/media/doc/mnl-est-v1-mfa_que_hacer_en_caso_0.pdf) y chatea con los encargados"
+    },
+    "2c": {
+      "text": "Hola {username}, ingresá y hacé la solicitud [aquí](https://www.tec.ac.cr/form/formulario-solicitud-de-carne-es)"
+    },
+    "2d": {
+      "text": "Hola {username}, ingresá y hacé la solicitud [aquí](ingresá y hacé la solicitud [aquí](https://www.tec.ac.cr/form/formulario-solicitud-de-carne-es)"
+    },
+    "2e": {
+      "text": "Hola {username}, hacé la solicitud de cancelación al correo expedientedigital@itcr.ac.cr y adjuntá la cédula vigente por ambos lados."
+    },
+    "3a": {
+      "text": "Hola {username}, hacé la solicitud de renovación al correo expedientedigital@itcr.ac.cr y adjuntá la cédula vigente por ambos lados."
+    },
+    "3b": {
+      "text": "Hola {username}, hacé la solicitud de renovación a expedientedigital@itcr.ac.cr y adjuntá el documento identificación vigente o documento probatorio de tramite de renovación o solicitud por primera vez."
+    },
+    "3c": {
+      "text": "Hola {username}, Hacé la solicitud de renovación a expedientedigital@itcr.ac.cr y adjuntá una fotografía con las siguientes caracteristicas: a. Cara de frente y con ojos abiertos. b. No incluir gafas de Sol, gorras o sombreros. c. Debe tener un fondo liso blanco o gris."
+    },
+    "3d": {
+      "text": "Hola {username}, 📌Hacé la solicitud al correo expedientedigital@itcr.ac.cr, a). Indicá la dirección actual(país, provincia, cantón, distrito, dirección exacta. b). Adjuntá el documento de identifiación vigente por ambos lados."
+    },
+    "3e": {
+      "text": "Hola {username}, Hacé la solicitud al correo expedientedigital@itcr.ac.cr, a). Adjuntá el documento de identificación vigente y anterior por ambos lados. "
+    },
+    "3f": {
+      "text": "Hola {username}, *a.* El trámite es personal, debe realizarlo la persona titular en la oficina de Expediente Estudiantil del Campus Central Cartago.\n\n*b.* Presentar una solicitud formal firmada a mano, dirigida a la Dirección de Admisión y Registro, indicando el cambio de nombre por identidad de género autopercibida.\n\n*c.* Presentar documento de identificación (ID) vigente.\n\n📌 *En caso de autorización a un tercero:*\n\n1. La persona estudiante debe autorizar mediante documento físico o digital.\n2. La solicitud debe indicar el tipo de trámite.\n3. Adjuntar copia del ID vigente (ambas personas, ambos lados).\n4. La autorización debe estar firmada:\n   4.1 En físico: firmada a mano por ambas personas y autenticada por un profesional en derecho.\n   4.2 En digital: firmada con certificado digital válido en Costa Rica por ambas personas."
+    },
+    "3g": {
+      "text": "Hola {username}, Verificá  que en Admisión y Registro este la información actualizada y despues comunicarte con el Tec Digital para que sincronicen la información que actualizaste. Tené en cuenta que Admisión y Registro no tiene acceso a la plataforma Tec Digital. "
+    },
+    "4a": {
+      "text": "Hola {username}, Si necesitás contactar al área encargada, podés llamar al 2550-2159 o escribir al correo: expedientedigital@tec.ac.cr"
+    }
+  }
+}

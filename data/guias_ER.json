@@ -1,7 +1,11 @@
 {
   "main_menu": {
-    "1": "Guía de horario y planes de estudio"
+    "1": "Guía de horario y planes de estudio",
+    "2": "Contactos"
   },
+
+
+
   "main_menu_submenus": {
     "1": {
       "a": "¿Donde veo la guía de horario?",
@@ -12,9 +16,15 @@
       "f": "¿Los cursos Cultural y Deportivos se pueden llevar juntos?",
       "g": "¿Por qué no puedo matricular un curso que aparece en la guía de horarios?",
       "h": "¿Donde puedo ver mi plan de estudios?",
-      "i": "¿Dónde consulto la fecha para reservar cupo si estoy por graduarme?"
+      "i": "Ver fecha para reservar cupo si estoy por graduarme"
+    },
+    "2": {
+      "a": "Contactar área de guías de horario"
     }
   },
+
+
+  
   "faq_respuestas": {
     "1a": {
       "text": "Hola {username}, [Click aquí para ver guía de horarios](https://tec-appsext.itcr.ac.cr/guiahorarios/escuela.aspx)"
@@ -26,7 +36,7 @@
       "text": "Hola {username}, Si un curso se encuentra reservado el sistema de matrícula te lo indicará y esto significa que son para poblaciones especificas o solo podrás matricularlos en la matricula extraordinaria."
     },
     "1d": {
-      "text": "Hola {username}, Ingresá al siguiente enlace y verás el significado de cada uno [ver Glosario](https://www.tec.ac.cr/sites/default/files/media/doc/gaceta_no._1092-2023_glosario_institucional_actualizado_al_15-05-2023._publicado_en_fecha_12-05-2023.pdf)"
+      "text": "Hola {username}, Ingresá al siguiente enlace y verás el significado de cada uno: [ver Glosario](https://www.tec.ac.cr/sites/default/files/media/doc/gaceta_no._1092-2023_glosario_institucional_actualizado_al_15-05-2023._publicado_en_fecha_12-05-2023.pdf)"
     },
     "1e": {
       "text": "Hola {username}, Únicamente en la matricula extraordinaria."
@@ -38,10 +48,13 @@
       "text": "Hola {username}, Debés revisar si cumple con los requisitos y correquisitos en los planes de estudio donde usted está ubicado."
     },
     "1h": {
-      "text": "Hola {username}, aquí puedes [Consultar planes](https://www.tec.ac.cr/planes-estudio-elaboracion-horario-clase)"
+      "text": "Hola {username}, puedes consultar tu plan de estudios ingresando aqui: [plan](https://www.tec.ac.cr/planes-estudio-elaboracion-horario-clase)"
     },
     "1i": {
-      "text": "Hola {username}, puedes [Consultar enlace](https://www.tec.ac.cr/semestre-verano)"
+      "text": "Hola {username}, puedes consultar las fechas ingresando al siguiente enlace: [fechas](https://www.tec.ac.cr/semestre-verano)"
+    },
+    "2a": {
+      "text": "Hola {username}, si necesitás contactar al área encargada, podés llamar al 2550-2341 o escribir al correo: lmontero@tec.ac.cr"
     }
   }
 }
