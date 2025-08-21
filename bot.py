@@ -45,8 +45,8 @@ async def start(update: Update, context: CallbackContext):
     user_name = update.message.from_user.first_name
     await update.message.reply_text(
         f"Hola {user_name}, KapiBOT te da la bienvenida \n\n"
-        "Estoy aquí para ayudarte con las dudas más frecuentes sobre los procesos institucionales del TEC.\n\n"
-        "Podés inicar dando clic en el comando que mejor se ajuste a tu necesidad.\n"
+        "Estoy aquí para brindar asistencia con las dudas más frecuentes sobre los procesos institucionales del TEC.\n\n"
+        "Podés iniciar dando clic en el comando que mejor se ajuste a tu necesidad.\n"
         "*Comandos disponibles:*\n"
         "• /start — Mensaje de bienvenida y explicación de comandos\n"
         "• /admision — Preguntas frecuentes sobre el proceso de admisión.\n"
