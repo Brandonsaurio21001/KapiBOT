@@ -32,6 +32,7 @@ from handlers.guiashorarios_handler import get_handlers as guias_handlers
 from handlers.admision_handler import get_handlers as admision_handlers
 from handlers.matricula_handler import get_handlers as matricula_handlers
 from handlers.otros_handler import get_handlers as otros_handlers
+from handlers.contacto_sedes_handler import get_handlers as sedes_handlers
 
 # Cargar el token desde el .env
 load_dotenv()
@@ -45,15 +46,16 @@ async def start(update: Update, context: CallbackContext):
     user_name = update.message.from_user.first_name
     await update.message.reply_text(
         f"Hola {user_name}, KapiBOT te da la bienvenida \n\n"
-        "Estoy aquí para brindar asistencia con las dudas más frecuentes sobre los procesos institucionales del TEC.\n\n"
-        "Podés iniciar dando clic en el comando que mejor se ajuste a tu necesidad.\n"
+        "Estoy aquí para ayudarte con las dudas más frecuentes sobre los procesos institucionales del TEC.\n\n"
         "*Comandos disponibles:*\n"
         "• /start — Mensaje de bienvenida y explicación de comandos\n"
         "• /admision — Preguntas frecuentes sobre el proceso de admisión.\n"
         "• /guiashorarios — Consultas sobre el uso de la guía de horarios.\n"
         "• /matricula — Dudas comunes sobre el sistema de matrícula.\n"
         "• /expediente — Información relacionada al expediente estudiantil.\n"
-        "• /otrostramites — Consultar otros trámites y servicios.\n\n"
+        "• /otrostramites — Consultar otros trámites y servicios.\n"
+        "• /contactoSedes — Directorio de contactos de cada sede.\n\n"
+
         "Puedes consultar la lista de comandos en el menú de la parte inferior.\n",
         parse_mode="Markdown"
     )
@@ -85,6 +87,9 @@ def main():
         app.add_handler(handler) 
     for handler in otros_handlers():
         app.add_handler(handler)
+    for handler in sedes_handlers():
+        app.add_handler(handler)
+
     # Mensaje por defecto
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_messages))
     print("KapiBOT está corriendo... esperando interacciones.")

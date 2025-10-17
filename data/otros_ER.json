@@ -4,26 +4,30 @@
     "2": "Cambio de carrera ",
     "3": "Equiparación de asignaturas",
     "4": "Retiro de cursos",
-    "5": "Suficiencias"
+    "5": "Suficiencias",
+    "6": "Autenticaciones títulos y certificaciones Casa Amarilla"
   },
 
   "main_menu_submenus": {
     "1": {
-      "a": "¿Como solicito una certificación ?"
+      "a": "¿Cómo solicito una certificación ?"
     },
     "2": {
-      "a": "¿Como solicito un cambio de carrera?"
+      "a": "¿Cómo solicito un cambio de carrera?"
     },
     "3": {
-      "a": "¿Como equiparo asignaturas?"
+      "a": "¿Cómo equiparo asignaturas?"
     },
     "4": {
-      "a": "¿Como solicito un retiro de materias ordinario?",
-      "b": "¿Como solicito un retiro Justificado Especial?"
+      "a": "¿Cómo solicito un retiro de materias ordinario?",
+      "b": "¿Cómo solicito un retiro Justificado Especial?"
     },
     "5": {
-      "a": "¿Como solicito una suficiencia?"
-    }
+      "a": "¿Cómo solicito una suficiencia?"
+    },
+    "6": {
+      "a": "¿Cómo tramitar una autenticación de título o certificaciónes?"
+    }    
 },
 
 
@@ -45,6 +49,9 @@
     },
     "5a": {
       "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Cambio de carrera](https://www.tec.ac.cr/tramites-servicios/cambio-carrera).\n\nPara consultas adicionales podés contactar a:\nSr. Carlos Araya\n📞 2550-2670\n✉️ caraya@tec.ac.cr"
+    },
+    "6a": {
+      "text": "Hola {username}, revisá el procedimiento en el siguiente enlace: [Autenticaciones](https://www.tec.ac.cr/tramites-servicios/tramite-autenticar-titulos-certificaciones-departamento-autenticaciones)"
     }
   }
 }

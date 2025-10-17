@@ -1,0 +1,34 @@
+{
+  "main_menu": {
+    "1": "Contactos de sedes "
+  },
+
+  "main_menu_submenus": {
+    "1": {
+      "a": "Campus Tecnológico Central Cartago",
+      "b": "Campus Tecnológico Local San José",
+      "c": "Campus Tecnológico Local San Carlos",
+      "d": "Centro Académico de Limón",
+      "e": "Centro Académico de Alajuela"
+    }
+},
+
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username},*📍 Puestos de información — Campus Tecnológico Central Cartago*\n\n👩‍💼 *Vilma Solano Picado*\n_Puestos de información Cartago_\n📧 vsolano@tec.ac.cr ó admisionregistro@itcr.ac.cr\n📞 2550-2667, 2550-2400\n\n👩‍💼 *Rebeca Sandoval Ramírez*\n_Puestos de información Cartago, Vespertino_\n📧 rsandoval@tec.ac.cr ó admisionregistro@itcr.ac.cr\n📞 2550-2667, 2550-2400\n\n📞 *Directorio telefónico completo:*\n[Departamento Admisión y Registro](https://www.tec.ac.cr/departamento-admision-registro/directorio)"
+    },
+    "1b": {
+      "text": "Hola {username}, *📍 Oficina de Admisión y Registro — Campus Tecnológico Local San José*\n\n👨‍💼 *César Acuña Redondo*\n_Oficina de Admisión y Registro CTL San José_\n📧 oficina_registro_sj@itcr.ac.cr\n📞 2550-9006, 2550-9084\n\n👨‍💼 *Warren Loaiciga*\n_Oficina de Admisión y Registro CTL San José_\n📧 oficina_registro_sj@itcr.ac.cr\n📞 2550-9106, 2550-9084"
+    },
+    "1c": {
+      "text": "Hola {username}, *📍 Oficina de Admisión y Registro — Campus Tecnológico Local San Carlos*\n\n👩‍💼 *Kattia Murillo Barquero*\n_Oficina de Admisión y Registro, CTL San Carlos_\n📧 oficina_registro_sc@itcr.ac.cr\n📞 2401-3294\n\n👨‍💼 *Erick Palacios Rodríguez*\n_Oficina de Admisión y Registro, CTL San Carlos_\n📧 oficina_registro_sc@itcr.ac.cr\n📞 2401-3289"
+    },
+    "1d": {
+      "text": "Hola {username}, *📍 Oficina de Admisión y Registro — Centro Académico de Limón*\n\n👩‍💼 *Marilyn Jiménez Segura*\n_Oficina de Admisión y Registro, CTL Limón_\n📧 oficina_registro_lm@itcr.ac.cr\n📞 2550-9173"
+    },  
+    "1e": {
+      "text": "Hola {username}, *📍 Oficina de Admisión y Registro — Centro Académico de Alajuela*\n\n👨‍💼 *Anthony Ulloa Acuña*\n_Oficina de Admisión y Registro, CA Alajuela_\n📧 oficina_registro_al@itcr.ac.cr\n📞 2550-9483"
+    }
+  }
+}
