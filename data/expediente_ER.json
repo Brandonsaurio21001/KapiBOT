@@ -96,7 +96,7 @@
       "text": "Hola {username}, Hacé la solicitud al correo expedientedigital@itcr.ac.cr, a). Adjuntá el documento de identificación vigente y anterior por ambos lados. "
     },
     "3f": {
-      "text": "Hola {username}, La persona estudiante puede presentar la solicitud de cambio de nombre por identidad de genero auto percibia mediante un escrito firmado en manuscrita de forma presencial, en cualquier Campus o Centro Académico, o bien puede realizar la solicitud al correo: expedientedigital@itcr.ac.cr firmado con certificado digital válido en Costa Rica (firma digital)En cualquiera de los casos debe adjuntar copia del documento de identidad vigente por ambos lados."
+      "text": "Hola {username}, 📌Podrás visualizar los pasos a seguir: a.\tEl trámite lo puede hacer presencialmente o vía correo electrónico. [Ver los detalles aquí](https://www.tec.ac.cr/cambio-nombre-identidad-genero) "
     },
     "3g": {
       "text": "Hola {username}, Verificá  que en Admisión y Registro este la información actualizada y despues comunicarte con el Tec Digital para que sincronicen la información que actualizaste. Tené en cuenta que Admisión y Registro no tiene acceso a la plataforma Tec Digital. "
