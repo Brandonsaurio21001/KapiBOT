@@ -11,6 +11,30 @@ def cargar_estructura():
     with open(ruta, encoding="utf-8") as f:
         return json.load(f)
 
+async def mostrar_menu_principal(query, context):
+    estructura = context.user_data.get("estructura_sedes")
+
+    if not estructura:
+        await query.edit_message_text("Por favor iniciá con /contactosedes.")
+        return
+
+    main_menu = estructura["main_menu"]
+
+    keyboard = [
+        [InlineKeyboardButton(text=v, callback_data=f"sedes_{k}")]
+        for k, v in main_menu.items()
+    ]
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    # Al volver al menú principal, ya no hay una opción interna activa.
+    context.user_data["sedes_current_menu"] = None
+
+    await query.edit_message_text(
+        "Seleccioná una categoría de sedes:",
+        reply_markup=reply_markup
+    )
+
 # Paso 1: /contactosedes → mostrar menú principal
 async def contacto_sedes_command(update: Update, context: CallbackContext):
     estructura = cargar_estructura()
@@ -54,6 +78,9 @@ async def handle_sedes_main_menu(update: Update, context: CallbackContext):
             [InlineKeyboardButton(text=v, callback_data=f"sedes_sub_{selection}{k}")]
             for k, v in submenu.items()
         ]
+        keyboard.append([
+            InlineKeyboardButton("⬅️ Volver", callback_data="sedes_back")
+        ])
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await query.edit_message_text(
@@ -84,10 +111,16 @@ async def handle_sedes_submenu(update: Update, context: CallbackContext):
     else:
         await query.edit_message_text("Esta opción no tiene información disponible.")
 
+async def handle_back(update: Update, context: CallbackContext):
+    query = update.callback_query
+    await query.answer()
+
+    await mostrar_menu_principal(query, context)
 # Exportar handlers para el main
 def get_handlers():
     return [
         CommandHandler("contactosedes", contacto_sedes_command),
         CallbackQueryHandler(handle_sedes_main_menu, pattern=r"^sedes_[1-9]$"),
-        CallbackQueryHandler(handle_sedes_submenu, pattern=r"^sedes_sub_[1-9][a-z]$")
+        CallbackQueryHandler(handle_sedes_submenu, pattern=r"^sedes_sub_[1-9][a-z]$"),
+        CallbackQueryHandler(handle_back,pattern=r"^sedes_back$")
     ]
