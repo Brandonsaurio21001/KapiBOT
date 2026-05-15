@@ -11,6 +11,29 @@ def cargar_estructura(tipo):
     with open(ruta, encoding="utf-8") as f:
         return json.load(f)
 
+async def mostrar_menu_principal(query, context):
+    estructura = context.user_data.get("estructura_guias")
+
+    if not estructura:
+        await query.edit_message_text("Por favor iniciá con /guiashorarios.")
+        return
+
+    main_menu = estructura["main_menu"]
+
+    keyboard = [
+        [InlineKeyboardButton(text=v, callback_data=f"guiashorarios_{k}")]
+        for k, v in main_menu.items()
+    ]
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    # Al volver al menú principal, ya no hay una opción interna activa.
+    context.user_data["guiashorarios_current_menu"] = None
+
+    await query.edit_message_text(
+        "Seleccioná una categoría de guías de horario:",
+        reply_markup=reply_markup
+    )
 # Paso 1: /guiashorarios → preguntar tipo
 async def guias_command(update: Update, context: CallbackContext):
     keyboard = [
@@ -75,6 +98,9 @@ async def handle_main_menu(update: Update, context: CallbackContext):
             [InlineKeyboardButton(text=v, callback_data=f"guiashorarios_{selection}{k}")]
             for k, v in submenu.items()
         ]
+        keyboard.append([
+            InlineKeyboardButton("⬅️ Volver", callback_data="guiashorarios_back")
+        ])
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await query.edit_message_text(
@@ -105,11 +131,18 @@ async def handle_submenu(update: Update, context: CallbackContext):
     else:
         await query.edit_message_text("Esta opción no tiene información disponible para tu tipo de estudiante.")
 
+async def handle_back(update: Update, context: CallbackContext):
+    query = update.callback_query
+    await query.answer()
+    
+    await mostrar_menu_principal(query, context)
+
 # Registro de handlers
 def get_handlers():
     return [
         CommandHandler("guiashorarios", guias_command),
         CallbackQueryHandler(seleccionar_tipo_estudiante, pattern=r"^guiashorarios_tipo_(NI|ER)$"),
         CallbackQueryHandler(handle_main_menu, pattern=r"^guiashorarios_[1-9]$"),
-        CallbackQueryHandler(handle_submenu, pattern=r"^guiashorarios_[1-9][a-z]$")
+        CallbackQueryHandler(handle_submenu, pattern=r"^guiashorarios_[1-9][a-z]$"),
+        CallbackQueryHandler(handle_back,pattern=r"^guiashorarios_back$")
     ]
