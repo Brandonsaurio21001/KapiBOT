@@ -81,19 +81,19 @@
       "text": "Hola {username}, hacé la solicitud de cancelación al correo expedientedigital@itcr.ac.cr y adjuntá la cédula vigente por ambos lados."
     },
     "3a": {
-      "text": "Hola {username}, hacé la solicitud de renovación al correo expedientedigital@itcr.ac.cr y adjuntá la cédula vigente por ambos lados."
+      "text": "Hola {username}, desbes hacer la solicitud de renovación al contacto de correo electronico según la sede a la que pertenezca tu carrera y adjuntá la cédula vigente por ambos lados. Para ver los contactos de las sedes puede usar el comando /contactoSedes"
     },
     "3b": {
-      "text": "Hola {username}, hacé la solicitud de renovación a expedientedigital@itcr.ac.cr y adjuntá el documento identificación vigente o documento probatorio de tramite de renovación o solicitud por primera vez."
+      "text": "Hola {username}, debes hacer la solicitud de renovación al contacto de correo electronico  según la sede a la que pertenezca tu carrera y adjuntá el documento identificación vigente o documento probatorio de tramite de renovación o solicitud por primera vez. Para ver los contactos de las sedes puede usar el comando /contactoSedes"
     },
     "3c": {
-      "text": "Hola {username}, Hacé la solicitud de renovación a expedientedigital@itcr.ac.cr y adjuntá una fotografía con las siguientes caracteristicas: a. Cara de frente y con ojos abiertos. b. No incluir gafas de Sol, gorras o sombreros. c. Debe tener un fondo liso blanco o gris."
+      "text": "Hola {username}, debes hacer la solicitud de renovación a al contacto de correo electronico  según la sede a la que pertenezca tu carrera y adjuntá una fotografía con las siguientes caracteristicas: a. Cara de frente y con ojos abiertos. b. No incluir gafas de Sol, gorras o sombreros. c. Debe tener un fondo liso blanco o gris. Para ver los contactos de las sedes puede usar el comando /contactoSedes"
     },
     "3d": {
       "text": "Hola {username}, 📌Hacé la solicitud al correo expedientedigital@itcr.ac.cr, a). Indicá la dirección actual(país, provincia, cantón, distrito, dirección exacta. b). Adjuntá el documento de identifiación vigente por ambos lados."
     },
     "3e": {
-      "text": "Hola {username}, Hacé la solicitud al correo expedientedigital@itcr.ac.cr, a). Adjuntá el documento de identificación vigente y anterior por ambos lados. "
+      "text": "Hola {username}, 📌Hacé la solicitud al al contacto de correo electronico según la sede a la que pertenezca tu carrera. a) Indicá la dirección actual(país, provincia, cantón, distrito, dirección exacta. b). Adjuntá el documento de identifiación vigente por ambos lados."
     },
     "3f": {
       "text": "Hola {username}, 📌Podrás visualizar los pasos a seguir: a.\tEl trámite lo puede hacer presencialmente o vía correo electrónico. [Ver los detalles aquí](https://www.tec.ac.cr/cambio-nombre-identidad-genero) "
