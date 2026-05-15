@@ -11,6 +11,29 @@ def cargar_estructura(tipo):
     with open(ruta, encoding="utf-8") as f:
         return json.load(f)
 
+async def mostrar_menu_principal(query, context):
+    estructura = context.user_data.get("estructura_matricula")
+
+    if not estructura:
+        await query.edit_message_text("Por favor iniciá con /matricula.")
+        return
+
+    main_menu = estructura["main_menu"]
+
+    keyboard = [
+        [InlineKeyboardButton(text=v, callback_data=f"matricula_{k}")]
+        for k, v in main_menu.items()
+    ]
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    # Al volver al menú principal, ya no hay una opción interna activa.
+    context.user_data["matricula_current_menu"] = None
+
+    await query.edit_message_text(
+        "Seleccioná una categoría de matrícula:",
+        reply_markup=reply_markup
+    )
 # Paso 1: /matricula → elegir tipo
 async def matricula_command(update: Update, context: CallbackContext):
     keyboard = [
@@ -75,6 +98,9 @@ async def handle_main_menu(update: Update, context: CallbackContext):
             [InlineKeyboardButton(text=v, callback_data=f"matricula_{selection}{k}")]
             for k, v in submenu.items()
         ]
+        keyboard.append([
+            InlineKeyboardButton("⬅️ Volver", callback_data="matricula_back")
+        ])
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await query.edit_message_text(
@@ -104,12 +130,18 @@ async def handle_submenu(update: Update, context: CallbackContext):
         await query.edit_message_text(text, parse_mode="Markdown")
     else:
         await query.edit_message_text("Esta opción no tiene información disponible para tu tipo de estudiante.")
+        
+async def handle_back(update: Update, context: CallbackContext):
+    query = update.callback_query
+    await query.answer()
 
+    await mostrar_menu_principal(query, context)
 # Registro de handlers
 def get_handlers():
     return [
         CommandHandler("matricula", matricula_command),
         CallbackQueryHandler(seleccionar_tipo_estudiante, pattern=r"^matricula_tipo_(NI|ER)$"),
         CallbackQueryHandler(handle_main_menu, pattern=r"^matricula_[1-9]$"),
-        CallbackQueryHandler(handle_submenu, pattern=r"^matricula_[1-9][a-z]$")
+        CallbackQueryHandler(handle_submenu, pattern=r"^matricula_[1-9][a-z]$"),
+        CallbackQueryHandler(handle_back,pattern=r"^matricula_back$")
     ]
