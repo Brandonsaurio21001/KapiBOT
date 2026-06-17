@@ -33,6 +33,8 @@ from handlers.admision_handler import get_handlers as admision_handlers
 from handlers.matricula_handler import get_handlers as matricula_handlers
 from handlers.otros_handler import get_handlers as otros_handlers
 from handlers.contacto_sedes_handler import get_handlers as sedes_handlers
+from handlers.biblioteca_handler import get_handlers as biblioteca_handlers
+from handlers.comedorInsti_handler import get_handlers as comedor_handlers
 
 # Cargar el token desde el .env
 load_dotenv()
@@ -54,7 +56,9 @@ async def start(update: Update, context: CallbackContext):
         "• /matricula — Dudas comunes sobre el sistema de matrícula.\n"
         "• /expediente — Información relacionada al expediente estudiantil.\n"
         "• /otrostramites — Consultar otros trámites y servicios.\n"
-        "• /contactoSedes — Directorio de contactos de cada sede.\n\n"
+        "• /contactoSedes — Directorio de contactos de cada sede.\n"
+        "• /biblioteca — Información sobre los servicios de biblioteca.\n"
+        "• /comedorInsti — Información sobre el servicio de comedor institucional.\n"
 
         "Puedes consultar la lista de comandos en el menú de la parte inferior.\n",
         parse_mode="Markdown"
@@ -89,10 +93,15 @@ def main():
         app.add_handler(handler)
     for handler in sedes_handlers():
         app.add_handler(handler)
+    for handler in biblioteca_handlers():
+        app.add_handler(handler)
+    for handler in comedor_handlers():
+        app.add_handler(handler)
+        
 
     # Mensaje por defecto
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_messages))
-    print("KapiBOT está corriendo... esperando interacciones.")
+    print("KapiBOT está corriendo... espera ndo interacciones.")
     try:
         app.run_polling()
     except KeyboardInterrupt:

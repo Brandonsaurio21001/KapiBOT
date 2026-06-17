@@ -1,0 +1,125 @@
+{
+  "main_menu": {
+    "1": "📖 Búsqueda de libros en SIBITEC",
+    "2": "🔄 Préstamo interbibliotecario",
+    "3": "🎓 Servicio de libro beca",
+    "4": "💻 Referencia virtual y presencial",
+    "5": "📚 Capacitaciones y talleres",
+    "6": "🗂️ Bases de datos y recursos electrónicos",
+    "7": "🏛️ Repositorio TEC",
+    "8": "🔬 Apoyo a la investigación",
+    "9": "♿ Servicios de accesibilidad",
+    "10": "🏢 Learning Commons",
+    "11": "⏰Horarios",
+    "12": "💰 Multas y préstamos"
+  },
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Qué es SIBITEC?",
+      "b": "¿Cómo ingreso a SIBITEC?"
+    },
+    "2": {
+      "a": "¿Qué es el préstamo interbibliotecario?",
+      "b": "¿Cómo solicito un préstamo interbibliotecario?"
+    },
+    "3": {
+      "a": "¿Qué es el servicio de libro beca?",
+      "b": "¿Cómo solicito libros por libro beca?"
+    },
+    "4": {
+      "a": "¿Qué es la referencia virtual y presencial?",
+      "b": "¿Cómo accedes al servicio de referencia virtual y presencial?"
+    },
+    "5": {
+      "a": "¿Qué capacitaciones ofrece SIBITEC?",
+      "b": "¿Cómo solicito una capacitación?"
+    },
+    "6": {
+      "a": "¿Cómo accedo a las bases de datos del TEC?"
+    },
+    "7": {
+      "a": "¿Qué es el Repositorio TEC?",
+       "b": "¿Cómo ingreso al Repositorio TEC?"
+    },
+    "8": {
+      "a": "¿Qué apoyo brinda la biblioteca a investigadores?"
+    },
+    "9": {
+      "a": "¿Qué son los servicios de accesibilidad?"
+    },
+    "10": {
+      "a": "¿Qué es el Learning Commons?",
+       "b": "¿Qué servicios ofrece el Learning Commons?"
+    },
+    "11": {
+      "a": "¿Cuál es el horario de la biblioteca?"
+    },
+    "12": {
+      "a": "¿Cuánto cuesta una multa por atraso?",
+      "b": "¿Cuánto tiempo puedo tener un libro prestado?"
+    }
+},
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, SIBITEC es el catálogo en línea del TEC donde puedes buscar libros, revistas y otros recursos disponibles en las bibliotecas institucionales."
+    },
+    "1b": {
+      "text": "Hola {username}, Puedes acceder al buscador SIBITEC a través del siguiente enlace: [SIBITEC](https://primo-tc-na01.hosted.exlibrisgroup.com/primo-explore/search?search_scope=itcr)"
+    },
+    "2a": {
+      "text": "El PIB es un servicio, que, por medio de alianzas estratégicas, el SIBITEC, facilita en calidad de préstamo, aquellos libros que no se encuentren en sus respectivas colecciones."
+    },
+    "2b": {
+      "text": "Hola {username}, Puedes escribir a:\n📧 biblioteca@itcr.ac.cr\n📱 WhatsApp: 8623-1818\n☎️ Teléfono: 2550-2357\nTambién lo puedes solicitarlo mediante el formulario oficial [Formulario oficial](https://surl.li/zcuati)"
+    },
+    "3a": {
+      "text": "Hola {username}, Es un préstamo semestral de libros dirigido a estudiantes con:\n✔️ Beca Mauricio Campos\n✔️ Beca de egresados del Colegio Científico\n✔️ Exoneración del 100%"
+    },
+    "3b": {
+      "text": "Hola {username}, Al inicio de cada semestre se publica un formulario en la página de la biblioteca.\n📌 Puedes solicitar hasta 5 libros por semestre."
+    },
+    "4a": {
+      "text": "Hola {username}, El servicio de referencia virtual y presencial en un servicio que se ofrece a los usuarios por parte de los bibliotecarios, con el fin de atender sus consultas, así como de asesorarlos en el uso de los diferentes recursos y productos de información que ofrece el SIBITEC."
+    },
+    "4b": {
+      "text": "Hola {username}, Puedes comunicarte mediante:\n📧 biblioteca@itcr.ac.cr\n📱 WhatsApp: 8623-1818\n☎️ 2550-2357\n🏢 Atención presencial en biblioteca y Learning Commons"
+    },
+    "5a": {
+      "text": "Hola {username}, SIBITEC  es parte del Programa de Alfabetización Informacional y ofrece capacitaciones sobre:\n✔️ Bases de datos\n✔️ Recursos electrónicos\n✔️ APA 7\n✔️ IEEE\n✔️ Herramientas de investigación"
+    },
+    "5b": {
+      "text": "Hola {username}, Puedes solicitar capacitaciones escribiendo a:\n📧 yquesada@itcr.ac.cr (Licda. Yorleny Quesada)\n📧 biblioteca@itcr.ac.cr\n📱 WhatsApp: 8623-1818"
+    },
+    "6a": {
+      "text": "Hola {username}, Puedes ingresar desde el siguiente enlace [ENLACE DIRECTO](https://tec.ac.cr/sistema-bibliotecas-sibitec)\nDebes usar tu usuario institucional (@estudiantec o @itcr.ac.cr)."
+    },
+    "7a": {
+      "text": "Hola {username}, Es una plataforma donde se almacena y difunde la producción científica y académica del TEC con acceso abierto."
+    },
+    "7b": {
+      "text": "Hola {username}, Puedes acceder al repositorio desde el siguiente enlace: [Repositorio TEC](https://repositoriotec.tec.ac.cr/)"
+    },
+    "8a": {
+      "text": "Hola {username}, SIBITEC ofrece apoyo en:\n🔎 Búsquedas especializadas\n📊 Scopus y Web of Science\n🧾 Gestores bibliográficos\n🧠 ORCID y perfiles académicos\n📚 Selección de revistas científicas\n⚠️ Identificación de revistas depredadoras"
+    },
+    "9a": {
+      "text": "Hola {username}, Son servicios y espacios adaptados para garantizar el acceso a la información a personas con necesidades especiales."
+    },
+    "10a": {
+      "text": "Hola {username}, Es un espacio moderno de aprendizaje colaborativo con salas de estudio, tecnología, préstamo de equipos y apoyo académico."
+    },
+    "10b": {
+      "text": "Hola {username}, El Learning Commons ofrece:\n💻 Préstamo de computadoras y equipos\n📚 Salas de estudio\n🖥️ Salas de video\n🎮 Juegos de mesa\n📖 Asesoría académica\n🌐 Servicios virtuales"
+    },
+    "11a": {
+      "text": "Hola {username},\n 📍 Biblioteca Cartago\nLunes a viernes: 7:00 a.m. a 8:00 p.m.\nSábados: 8:00 a.m. a 2:00 p.m.\n📍 Learning Commons\nLunes a viernes: 7:30 a.m. a 6:00 p.m.\n📍 Biblioteca San José\nLunes a viernes: 7:30 a.m. a 6:00 p.m.\nSábados: 8:00 a.m. a 2:00 p.m."
+    },
+    "12a": {
+      "text": "Hola {username},\n 📕 Colección general, revistas y referencia:\n₡150 por día.\n📘 Colección de reserva:\n₡150 por hora."
+    },
+    "12b": {
+      "text": "Hola {username},\n 📚 Colección general:\n15 días con hasta 3 renovaciones.\n⏰ Colección de reserva:\nPréstamo por horas."
+    }
+  }
+}

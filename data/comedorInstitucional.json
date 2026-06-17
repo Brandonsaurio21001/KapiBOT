@@ -1,0 +1,42 @@
+{
+  "main_menu": {
+    "1": "Restaurante Institucional Campus Tecnológico Central Cartago "
+  },
+
+  "main_menu_submenus": {
+    "1": {
+      "a": "¿Cual es el objetivo del Restaurante Institucional?",
+      "b": "¿Qué servicios ofrece?",
+      "c": "Horario de atención al Público",
+      "d": "¿Debo tener carné para hacer uso del Restaurante Institucional?",
+      "e": "¿Cuál es el metodo de pago?",
+      "f": "¿Dónde puedo ver el menú diario?",
+      "g": "Enlaces de interes (Precios, contratos sodas, manual compra alimentos)"
+    }
+},
+
+
+  "faq_respuestas": {
+    "1a": {
+      "text": "Hola {username}, El Restaurante Institucional tiene el objetivo de apoyar en el bienestar integral de la comunidad institucional del Campus Central Cartago y en especial de los estudiantes al brindar una alimentación saludable y nutritiva, de costo accesible y con una higiene esmerada, capaz de atender gran cantidad de personas en tiempos de comida de alta demanda y en periodos de tiempo muy limitados. Más información \n[Presione aquí](https://www.tec.ac.cr/restaurante-institucional)"
+    },
+    "1b": {
+      "text": "Hola {username}, Alimentación diaria en cuatro tiempos de comida a la comunidad Institucional.\nComunicación del menú a diferentes medios.\nAtención de eventos solicitados por las Vicerrectorías.\nPréstamo de los salones según disponibilidad fuera de horario del servicio de alimentos.\nColaboración en proyectos estudiantiles.\nMás información \n[Presione aquí](https://www.tec.ac.cr/restaurante-institucional)"
+    },
+    "1c": {
+      "text": "Hola {username}, Visualizá el horario haciendo clic aquí\n [HORARIO](https://www.tec.ac.cr/restaurante-institucional)"
+    },
+    "1d": {
+      "text": "Hola {username}, Es necesario portar el carné institucional al hacer uso del Restaurante Institucional, dado que en caso de duda se deberá cobrar como persona externa (más 300%)."
+    },  
+    "1e": {
+      "text": "Hola {username}, El pago actualmente es solo con tarjeta de débito o crédito, excepto American Express."
+    },
+    "1f": {
+      "text": "Hola {username}, El Menú diario está sujeto a cambios.\nPodres visualizarlo aquí\n[Menú diario](https://t.me/comitec)"
+    },
+    "1g": {
+      "text": "Hola {username}, Podes ver la información detallada haciendo clic aquí\n[Información detallada](https://www.tec.ac.cr/documentos-restaurante-institucional)"
+    }
+  }
+}
